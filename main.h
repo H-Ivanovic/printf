@@ -55,6 +55,12 @@ int print_unsgined_number(unsigned int);
 #include <limits.h>
 #include <stdlib.h>
 
+/* SIZES */                                                                                                  
+
+#define S_LONG 2                                                                                             
+#define S_SHORT 1
+
+
 /**
  * * struct types_arguments - Struct op
  * *
@@ -95,5 +101,6 @@ int get_width(const char *format, int *i, va_list list);
 
 int get_precision(const char *format, int *i, va_list list);                                                
 int get_size(const char *format, int *i); 
+int is_digit(char);
 
 #endif
