@@ -87,6 +87,13 @@ int t_char(va_list va);
 int t_string(va_list va);
 int print_number(va_list va);
 
+/* function to handle other specifiers */                                                                    
 
+int get_flags(const char *format, int *i);                                                                   
+
+int get_width(const char *format, int *i, va_list list);                                                     
+
+int get_precision(const char *format, int *i, va_list list);                                                
+int get_size(const char *format, int *i); 
 
 #endif
